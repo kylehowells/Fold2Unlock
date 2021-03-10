@@ -13,6 +13,9 @@
 		C7CD3F6B156C4B2500AD63D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7CD3F69156C4B2500AD63D3 /* InfoPlist.strings */; };
 		C7CD3F6D156C4B2500AD63D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD3F6C156C4B2500AD63D3 /* main.m */; };
 		C7CD3F71156C4B2500AD63D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD3F70156C4B2500AD63D3 /* AppDelegate.m */; };
+		C7CD3F78156C4B4800AD63D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CD3F77156C4B4800AD63D3 /* QuartzCore.framework */; };
+		C7CD3F7B156C4C0600AD63D3 /* KHFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD3F7A156C4C0600AD63D3 /* KHFoldView.m */; };
+		C7CD3F7D156C639B00AD63D3 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = C7CD3F7C156C639B00AD63D3 /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,16 @@
 		C7CD3F60156C4B2500AD63D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7CD3F62156C4B2500AD63D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7CD3F64156C4B2500AD63D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C7CD3F68156C4B2500AD63D3 /* Fold2Unlock-Info.plist */ = {isa = PBXFileReference; path = "Fold2Unlock-Info.plist"; sourceTree = "<group>"; };
+		C7CD3F68156C4B2500AD63D3 /* Fold2Unlock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fold2Unlock-Info.plist"; sourceTree = "<group>"; };
 		C7CD3F6A156C4B2500AD63D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7CD3F6C156C4B2500AD63D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C7CD3F6E156C4B2500AD63D3 /* Fold2Unlock-Prefix.pch */ = {isa = PBXFileReference; path = "Fold2Unlock-Prefix.pch"; sourceTree = "<group>"; };
-		C7CD3F6F156C4B2500AD63D3 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7CD3F6E156C4B2500AD63D3 /* Fold2Unlock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fold2Unlock-Prefix.pch"; sourceTree = "<group>"; };
+		C7CD3F6F156C4B2500AD63D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7CD3F70156C4B2500AD63D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7CD3F77156C4B4800AD63D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C7CD3F79156C4C0600AD63D3 /* KHFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHFoldView.h; sourceTree = "<group>"; };
+		C7CD3F7A156C4C0600AD63D3 /* KHFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHFoldView.m; sourceTree = "<group>"; };
+		C7CD3F7C156C639B00AD63D3 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CD3F78156C4B4800AD63D3 /* QuartzCore.framework in Frameworks */,
 				C7CD3F61156C4B2500AD63D3 /* UIKit.framework in Frameworks */,
 				C7CD3F63156C4B2500AD63D3 /* Foundation.framework in Frameworks */,
 				C7CD3F65156C4B2500AD63D3 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +70,7 @@
 		C7CD3F5F156C4B2500AD63D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7CD3F77156C4B4800AD63D3 /* QuartzCore.framework */,
 				C7CD3F60156C4B2500AD63D3 /* UIKit.framework */,
 				C7CD3F62156C4B2500AD63D3 /* Foundation.framework */,
 				C7CD3F64156C4B2500AD63D3 /* CoreGraphics.framework */,
@@ -74,6 +83,8 @@
 			children = (
 				C7CD3F6F156C4B2500AD63D3 /* AppDelegate.h */,
 				C7CD3F70156C4B2500AD63D3 /* AppDelegate.m */,
+				C7CD3F79156C4C0600AD63D3 /* KHFoldView.h */,
+				C7CD3F7A156C4C0600AD63D3 /* KHFoldView.m */,
 				C7CD3F67156C4B2500AD63D3 /* Supporting Files */,
 			);
 			path = Fold2Unlock;
@@ -82,6 +93,7 @@
 		C7CD3F67156C4B2500AD63D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7CD3F7C156C639B00AD63D3 /* screenshot.png */,
 				C7CD3F68156C4B2500AD63D3 /* Fold2Unlock-Info.plist */,
 				C7CD3F69156C4B2500AD63D3 /* InfoPlist.strings */,
 				C7CD3F6C156C4B2500AD63D3 /* main.m */,
@@ -141,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7CD3F6B156C4B2500AD63D3 /* InfoPlist.strings in Resources */,
+				C7CD3F7D156C639B00AD63D3 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +166,7 @@
 			files = (
 				C7CD3F6D156C4B2500AD63D3 /* main.m in Sources */,
 				C7CD3F71156C4B2500AD63D3 /* AppDelegate.m in Sources */,
+				C7CD3F7B156C4C0600AD63D3 /* KHFoldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +233,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fold2Unlock/Fold2Unlock-Prefix.pch";
 				INFOPLIST_FILE = "Fold2Unlock/Fold2Unlock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -230,7 +246,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fold2Unlock/Fold2Unlock-Prefix.pch";
 				INFOPLIST_FILE = "Fold2Unlock/Fold2Unlock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -254,6 +272,7 @@
 				C7CD3F76156C4B2500AD63D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
