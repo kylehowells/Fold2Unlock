@@ -58,7 +58,8 @@
 }
 
 -(void)setViewImage:(UIImage *)viewImage{
-    [_viewImage release], _viewImage = nil;
+	[_viewImage release];
+	_viewImage = nil;
     _viewImage = [viewImage retain];
 
     [self updateAll];
@@ -153,9 +154,9 @@
     // As it's just a demo finish up, you'll want to add some code to check whether or not to actually consider it as "unlocked" here.
     if (gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateCancelled) {
         // Animate it back into place.
-        [UIView beginAnimations:nil context:nil];
-        [self layoutSlicesForPercentage:0];
-        [UIView commitAnimations];
+		[UIView animateWithDuration:0.28 animations:^{
+			[self layoutSlicesForPercentage:0];
+		}];
     }
 }
 

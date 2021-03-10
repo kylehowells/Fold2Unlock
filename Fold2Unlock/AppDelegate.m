@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "KHFoldView.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -22,15 +22,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+	
     self.window.backgroundColor = [UIColor whiteColor];
-
-    KHFoldView *foldView = [[[KHFoldView alloc] initWithFrame:_window.bounds] autorelease];
-    foldView.slices = 7;
-    foldView.viewImage = [UIImage imageNamed:@"screenshot.png"];
-    [self.window addSubview:foldView];
-
-    [UIApplication sharedApplication].statusBarHidden = YES;
+	self.window.rootViewController = [[MainViewController alloc] init];
 
     [self.window makeKeyAndVisible];
     return YES;
